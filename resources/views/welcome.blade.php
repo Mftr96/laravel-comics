@@ -13,6 +13,9 @@
 
 <body>
     <div class="container">
+        :@foreach ($data as $item)
+        <li>{{$item}}</li>
+        @endforeach
     </div>
   
 </body>
