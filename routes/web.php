@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //milestone 2(creazione data nella rotta )
-    $data=[
+    $data_prova=[
         //dati di saluto 
         "welcome"=>"benvenuto!",
         "hello"=> "ciao",
@@ -26,6 +26,8 @@ Route::get('/', function () {
             "Batman",
             "Paperino",
         ],
+        //importo il file store che sarà da immettere nel return 
+        $data=config("store"),
     ];
     //importo il data nel view
     return view('welcome',$data);

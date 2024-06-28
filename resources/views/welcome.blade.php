@@ -10,9 +10,9 @@
 
 <body>
     {{-- creo ciclo su array "heroes" --}}
-    @foreach ($heroes as $hero)
+    {{-- @foreach ($heroes as $hero)
         <li>{{$hero}}</li>
-    @endforeach
+    @endforeach --}}
   
 </body>
 
