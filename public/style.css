@@ -27,7 +27,14 @@ body{
 
 p{
     width: 100%;
+    font-size: small;
 }
 img{
     width: 20%;
+}
+/* i partial attingono dallo stile della pagina in cui vengono inseriti  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
 }

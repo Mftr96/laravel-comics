@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    {{-- includo il partial header --}}
+    @include('partials.header')
+
     <div class="container">
         :@foreach ($supereroi as $item)
             <div class="card">
