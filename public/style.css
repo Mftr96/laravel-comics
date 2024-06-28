@@ -1,7 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body{
     background-color: pink;
 }
 
 .container{
-    width: 1000px;
+    width: 2000px;
+    height: 2000px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width:500px;
+    height: 500px;
+
+    border: 1px solid crimson;
+}
+
+p{
+    width: 100%;
+}
+img{
+    width: 20%;
 }

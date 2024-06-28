@@ -14,7 +14,11 @@
 <body>
     <div class="container">
         :@foreach ($supereroi as $item)
-        <li>{{$item['title']}}</li>
+            <div class="card">
+                <h2>{{$item['title']}}</h2>
+                <img src="{{$item['thumb']}}" alt="">
+                <p>{{$item['description']}}</p>
+            </div>
         @endforeach
     </div>
   
