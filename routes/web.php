@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//creo seconda rotta per la pagina welcome
+//quando metto come rotta /home
+Route::get('/home',function() {
+    //visualizzo il file welcome.blade.php
+    return view('welcome');
+});
