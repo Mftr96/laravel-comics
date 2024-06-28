@@ -39,3 +39,8 @@ Route::get('/home',function() {
     //visualizzo il file welcome.blade.php
     return view('welcome');
 });
+
+//milestone 3:creazione rotta about
+Route::get('/about',function(){
+return view('about');
+});
