@@ -13,8 +13,8 @@
 
 <body>
     <div class="container">
-        :@foreach ($data as $item)
-        <li>{{$item}}</li>
+        :@foreach ($supereroi as $item)
+        <li>{{$item['title']}}</li>
         @endforeach
     </div>
   
