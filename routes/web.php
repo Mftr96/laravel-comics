@@ -14,7 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //milestone 2(creazione data nella rotta )
+    $data=[
+        //dati di saluto 
+        "welcome"=>"benvenuto!",
+        "hello"=> "ciao",
+        "goodbye"=> "Arrivederci!",
+        //array supereroi
+        "heroes"=>[
+            "Superman",
+            "Batman",
+            "Paperino",
+        ],
+    ];
+    //importo il data nel view
+    return view('welcome',$data);
 });
 
 //creo seconda rotta per la pagina welcome

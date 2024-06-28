@@ -9,8 +9,11 @@
 </head>
 
 <body>
-    <h1>ciao</h1>
-
+    {{-- creo ciclo su array "heroes" --}}
+    @foreach ($heroes as $hero)
+        <li>{{$hero}}</li>
+    @endforeach
+  
 </body>
 
 </html>
