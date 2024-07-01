@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- utilizzo il layout appena creato per snellire il codice --}}
+@extends('layouts.app')
+{{-- il secondo argomento della section è una stringa
+ che va a prendere il posto assegnato evitando così di scrivere più codice  --}}
+@section('title','About')
+{{-- questa sezione non ha il secondo argomento perchè inserisco tag HTML --}}
+@section('content')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>laravel-comics-about</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+    <h1>ciao! sei giunto nella sezione about</h1>
+    <p>e niente, questo è tutto </p>
+@endsection

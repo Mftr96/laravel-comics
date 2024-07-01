@@ -104,3 +104,12 @@ controllare che i file importati da public siano corretti(usando lo /):già fatt
 assicurarsi la giusta configurazione del config(controllare se bisogna far ritornare l'array come all'inizio)
 nella traccia precedente ho creato un array nel file store.php per fare in modo che nel file web.php vada a prendere l'array.
 Per ora Luca ha detto che va bene, ma mi chiedo se sia poi necessario fare nell'altra maniera per richiamare meglio i dati 
+
+milestone 1:
+creazione layout base, creazione cartella layouts
+nel layout andare a creare dei segnaposto con yield che verranno ripresi nei file che usano il layout
+andare a modificare le pagine welcome e about con l'utilizzo di layout(quindi riducendo lo scheletro della pagina con un @extends) e andando a scrivere nei segnaposto preposti tramite l'utilizzo di @section del relativo @yield 
+
+
+milestone 2:creazione di link nell'header che rimandino alle relative rotte 
+vado a creare le rotte necessarie nel file web.php

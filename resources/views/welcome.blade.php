@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{-- se metti style nel public, il percorso è quello da public, 
-    non il percorso per arrivare da questo file allo style --}}
-    <link rel="stylesheet" href="/style.css">
-    <title>Laravel-comics-Home</title>
-</head>
-
-<body>
-    {{-- includo il partial header --}}
-    @include('partials.header')
-
+{{-- richiamo il layout --}}
+@extends('layouts.app')
+{{-- metto il titolo tramite section --}}
+@section('title','COMIC-HOME')
+{{-- inserisco il contenuto principale tramite section --}}
+@section('content')
     <div class="container">
         @foreach ($supereroi as $item)
             <div class="card">
@@ -24,7 +13,6 @@
             </div>
         @endforeach
     </div>
+@endsection
   
-</body>
 
-</html>
