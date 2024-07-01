@@ -112,4 +112,6 @@ andare a modificare le pagine welcome e about con l'utilizzo di layout(quindi ri
 
 
 milestone 2:creazione di link nell'header che rimandino alle relative rotte 
-vado a creare le rotte necessarie nel file web.php
+vado a creare le rotte necessarie nel file web.
+aggiungo il name alle rotte 
+milestone 2 1/2: lavorare sul Route::getcurrentRouteName per agire sullo stile del link(es.se sono sulla pagina about, il link about sarà colorato di giallo)

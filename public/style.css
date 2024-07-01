@@ -39,3 +39,8 @@ nav{
     display: flex;
     justify-content: center;
 }
+/* classe per i link header */
+.selected{
+    color:yellow;
+    text-decoration: dashed;
+}

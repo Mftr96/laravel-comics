@@ -4,8 +4,10 @@ in welcome.blade.php  --}}
     <nav>
   <div>
     {{-- inserisco link tramiter route --}}
-    <a href="{{route("welcome")}}">WELCOME</a>
-    <a href="{{route("about")}}">ABOUT</a>
+    {{-- si, ho copiato una soluzione online ma funziona😅 --}}
+    <a @class(['selected' => Route::currentRouteName() === 'welcome']) href="{{route("welcome")}}">WELCOME</a>
+    <a @class(['selected' => Route::currentRouteName() === 'about']) href="{{route("about")}}">ABOUT</a>
+    <p>siamo su {{Route::currentRouteName()}}</p>
   </div>
     </nav>
 </header>
