@@ -10,17 +10,18 @@ body{
 }
 
 .container{
-    width: 2000px;
-    height: 2000px;
+    width: 1200px;
+    height: 1200px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
     
 }
 
 .card{
-    width:500px;
-    height: 500px;
+    width:calc(1200px / 4 );
 
     border: 1px solid crimson;
 }

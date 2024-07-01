@@ -16,7 +16,7 @@
     @include('partials.header')
 
     <div class="container">
-        :@foreach ($supereroi as $item)
+        @foreach ($supereroi as $item)
             <div class="card">
                 <h2>{{$item['title']}}</h2>
                 <img src="{{$item['thumb']}}" alt="">
