@@ -2,7 +2,7 @@
 @extends('layouts.app')
 {{-- il secondo argomento della section è una stringa
  che va a prendere il posto assegnato evitando così di scrivere più codice  --}}
-@section('title','About')
+@section('title', 'About')
 {{-- questa sezione non ha il secondo argomento perchè inserisco tag HTML --}}
 @section('content')
 

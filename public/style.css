@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     background-color: pink;
 }
 
-.container{
+.container {
     width: 1200px;
     height: 1200px;
     border: 1px solid black;
@@ -17,30 +17,33 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: auto;
-    
+
 }
 
-.card{
-    width:calc(1200px / 4 );
+.card {
+    width: calc(1200px / 4);
 
     border: 1px solid crimson;
 }
 
-p{
+p {
     width: 100%;
     font-size: small;
 }
-img{
+
+img {
     width: 20%;
 }
+
 /* i partial attingono dallo stile della pagina in cui vengono inseriti  */
 
-nav{
+nav {
     display: flex;
     justify-content: center;
 }
+
 /* classe per i link header */
-.selected{
-    color:yellow;
+.selected {
+    color: yellow;
     text-decoration: dashed;
 }
