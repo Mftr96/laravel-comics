@@ -18,16 +18,20 @@ Route::get('/', function () {
     $data=config("store");
     //importo il data nel view
     return view('welcome',$data);
-});
+    /*aggiungo il name per fare in modo
+     di usare la funzione route nell'header*/
+})->name("welcome");
 
 //creo seconda rotta per la pagina welcome
 //quando metto come rotta /home
 Route::get('/home',function() {
-    //visualizzo il file welcome.blade.php
-    return view('welcome');
-});
+    //devo importare anche qui il file store.php
+    $data=config("store");
+     //visualizzo il file welcome.blade.php
+    return view('welcome',$data);
+})->name("welcome");
 
 //milestone 3:creazione rotta about
 Route::get('/about',function(){
 return view('about');
-});
+})->name("about");

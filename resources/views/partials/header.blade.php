@@ -2,11 +2,10 @@
 in welcome.blade.php  --}}
 <header>
     <nav>
-        <div class="nav-left">
-            <p>ciao</p>
-        </div>
-        <div class="nav-right">
-            <p>ciao a destra</p>
-        </div>
+  <div>
+    {{-- inserisco link tramiter route --}}
+    <a href="{{route("welcome")}}">WELCOME</a>
+    <a href="{{route("about")}}">ABOUT</a>
+  </div>
     </nav>
 </header>
